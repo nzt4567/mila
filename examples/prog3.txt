@@ -1,0 +1,14 @@
+var x,i,y;
+
+begin
+  x:=30;
+  y:=10;
+
+  for i:=x downto y do
+    begin
+      write i;
+      y:=y+1;
+    end;
+  write 1;
+  write 2;
+end

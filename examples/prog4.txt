@@ -1,0 +1,29 @@
+const c1=012, c2=10;
+var a,b,c,d,p1[0..10],p2[0..10],p3[0..10];
+
+begin
+  for a:=10 to c1+c2-1 do
+    begin
+      p1[a-10]:=a*a;
+      p2[a-10]:=p1[a-10];
+      p3[a-10]:=p2[a-10] + 2;
+    end;
+
+  a:=0;
+
+  for b:=c1+c2 downto c1+1 do
+    begin
+      write p1[a];
+      write p2[a];
+      write p3[a];
+      a:=a+1;
+    end;
+
+  b:=b-1;
+  for c:=b downto 0 do
+    begin
+      write p1[c] + p2[c] + p3[c];
+      write p3[c] - p2[c];
+      write (p3[c] + p1[c]) / 2;
+    end;
+end
